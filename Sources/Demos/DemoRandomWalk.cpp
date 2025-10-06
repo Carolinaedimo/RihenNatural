@@ -22,7 +22,7 @@ namespace nkentseu {
         Circle(position, 4.0f); 
 
         
-         
+         //Exercice 1 : déplacements diagonaux
         // Prendre un pas aléatoire 
     //     int choice = math::Random::Range(0, 7); 
          
@@ -44,6 +44,7 @@ namespace nkentseu {
     //         position.x++;  position.y++; 
     //     } 
 
+         //Exercice 2 : marcheur qui a tendance à se déplacer vers la position de la souris
         float r = math::Random::Value(); 
 
         if (r < 0.5f ) {
@@ -97,4 +98,5 @@ namespace nkentseu {
 // Fonction de création 
 nkentseu::Application* CreateRandomWalkDemo(const nkentseu::ApplicationProperties& props) { 
     return new nkentseu::DemoRandomWalk(props); 
+
 } 
