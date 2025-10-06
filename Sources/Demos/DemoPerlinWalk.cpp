@@ -1,5 +1,8 @@
 #include "DemoPerlinWalk.h" 
- 
+
+// Exercice 4: : Expérimentation avec différentes valeurs d’incrément pour tx et ty pour voir 
+comment cela affecte la fluidité du mouvement. 
+
 namespace nkentseu { 
     DemoPerlinWalk::DemoPerlinWalk(const ApplicationProperties& props)  
         : Application(props), tx(0.0f), ty(10000.0f) {} 
@@ -30,6 +33,10 @@ namespace nkentseu {
         // Avancer dans l'"espace-temps" du bruit 
         tx += 0.01f; 
         ty += 0.01f; 
+        // tx += 0.1f; 
+        // ty += 0.1f;
+        // tx += 0.5f; 
+        // ty += 0.5f;
     } 
 } 
  
@@ -37,4 +44,5 @@ namespace nkentseu {
 nkentseu::Application* CreatePerlinWalkDemo(const 
 nkentseu::ApplicationProperties& props) { 
     return new nkentseu::DemoPerlinWalk(props); 
+
 }
