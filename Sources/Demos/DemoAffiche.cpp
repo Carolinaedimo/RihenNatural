@@ -1,5 +1,6 @@
 #include "DemoAffiche.h"
- 
+
+//Exercice 3 :  dessiner un histogramme des positions visitées par le marcheur.
 namespace nkentseu { 
     DemoAffiche::DemoAffiche(const ApplicationProperties& props)  
         : Application(props) {} 
@@ -69,4 +70,5 @@ namespace nkentseu {
 // Fonction de création 
 nkentseu::Application* CreateAfficheDemo(const nkentseu::ApplicationProperties& props) { 
     return new nkentseu::DemoAffiche(props); 
+
 } 
